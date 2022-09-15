@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>202035010230 汤泽贤</title>
+	<script  type="text/javascript">
+		/*（10分）根据表单定义，编写一个名称类似 wenlibin（记得改为您姓名的拼音哦）的JS函数，
+		*/
+
+
+		function tzxbin(){
+			var txtN=parseInt(document.getElementById("txtN").value);
+			var textFact=parseInt(document.getElementById("txtFact").value);
+			var sum;
+
+			for(var i=1;i<textFact;i++){
+				for(var j=1;i<j;j++){
+					sum=txtN*(txtN+1);
+				}
+			}
+			return sum;
+		}
+
+	</script>
+</head>
+<body>
+	<h3>计算阶乘n!</h3>
+	<form name="Form1">
+		整数: <input type="text" id="txtN" size="11" value=0><br>
+		阶乘: <input type="text" id="txtFact" size="11" value=0><br><br> 
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<!--（1分）修改【计算】按钮的定义，添加必要内容，以对该按钮的单击事件进行适当处理-->
+		<input type="button"  value="计算" onclick="tzxbin">
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<input type="reset">
+	</form>
+	<p>程序员：202035010230 汤泽贤</p>
+</body>
+</html>

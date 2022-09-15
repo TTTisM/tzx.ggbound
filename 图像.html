@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>202035010230 汤泽贤</title>
+<style>
+
+	div{margin: 5px;}
+	.img {
+		width: 100px;
+		height: 100px;
+		border: 5px solid #fff;
+		border-radius: 10px;
+		overflow: hidden;
+	}
+
+	/*为三个类选择器定义属性，将3个内层div盒子设置为所有属性均在1秒内完成变形*/
+	.morph,.skew,.rotate {
+
+		
+	}
+
+	.morph:hover,.skew:hover,.rotate:hover {box-shadow: 0 0 20px rgba(255,255,255,0.6), inset 0 0 20px rgba(255,255,255,1);}
+
+	/*编写.morph的伪类选择器，使得鼠标移入或悬停于上边的div盒子时其呈现5像素白色实线圆形边框*/
+
+	.morph:honver{
+
+		border-radius: white solid 5px;
+	}
+
+
+	/*编写.skew的伪类选择器，使得鼠标移入或悬停于中间的div盒子时盒子沿X、Y轴倾斜15度*/
+	.skew:honver{
+
+	}
+
+	
+	/*编写.rotate的伪类选择器，使得鼠标移入或悬停于下边的div盒子时整个盒子绕X轴旋转180度*/
+	.rotate:honver{
+
+	}
+
+	
+</style>
+
+</head>
+<body style="background:#000; width: 50%; margin: 0; padding: 0;">
+<div style="width:50px; margin: 5% auto;">
+		<!--为三个div盒子中的图像标签添加html属性代码，使之能正确显示图像-->
+		
+		<div class="morph img"><img src="素材/image1.jpg"/></div>
+		<div class="skew img"><img src="素材/image2.jpg"/></div>
+		<div class="rotate img"><img src="素材/image3.jpg"/></div>
+</div>
+<p style="color: white;">程序员：202035010230汤泽贤</p>
+
+</body>
+</html>
